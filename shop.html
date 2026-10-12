@@ -17,7 +17,8 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
             <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
@@ -26,11 +27,21 @@
         <h1>Our Collection</h1>
         <p>Discover the latest trends and styles in fashion.</p>
     </section>
+
+    <!-- Search Box Section -->
+    <section class="search-filter-container">
+        <form action="shop.php" method="GET" class="search-form">
+            <input type="text" name="search" placeholder="Search by name, color, or style..." class="search-input">
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+    </section>
+
+    <!-- Shop Section -->
     <section class="shop-section">
-        <h2>All products</h2>
 
+        <!-- 1. Casual Dress Section -->
+        <h2 class="category-title">Casual Dress</h2>
         <div class="products-container">
-
             <!-- Item 1 -->
             <div class="product-grid">
                 <img src="https://i.pinimg.com/1200x/af/c7/81/afc781ff6144f9ebbbac26c3dec07a85.jpg" alt="Casual Dress">
@@ -60,7 +71,11 @@
                 <p class="color">Blue , Green , Yellow</p>
                 <button class="buy-btn">Buy Now</button>
             </div>
+        </div>
 
+        <!-- 2. Party Dress Section -->
+        <h2 class="category-title">Party Dress</h2>
+        <div class="products-container">
             <!-- Item 4 -->
             <div class="product-grid">
                 <img src="https://i.pinimg.com/736x/c9/e7/a8/c9e7a8977c2570bc71e911209a5ed720.jpg" alt="Party Dress">
@@ -90,7 +105,11 @@
                 <p class="color">Pink , White , Black</p>
                 <button class="buy-btn">Buy Now</button>
             </div>
+        </div>
 
+        <!-- 3. Street Wear Section -->
+        <h2 class="category-title">Street Wear</h2>
+        <div class="products-container">
             <!-- Item 7 -->
             <div class="product-grid">
                 <img src="https://i.pinimg.com/1200x/5b/58/98/5b5898010c83f435bedda3ecfa69bb6a.jpg" alt="Street Wear">
@@ -120,8 +139,8 @@
                 <p class="color">Black , White , Pink</p>
                 <button class="buy-btn">Buy Now</button>
             </div>
-
         </div>
+
     </section>
 
 </body>
